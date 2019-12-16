@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1005370802483",
+    "firebase_url": "https://masoi-f7eb0.firebaseio.com",
+    "project_id": "masoi-f7eb0",
+    "storage_bucket": "masoi-f7eb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005370802483:android:92e2a9d3d34c9f7806be46",
+        "android_client_info": {
+          "package_name": "com.huynhtrongman.masoi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005370802483-gphpc806bgrfd1c0gv745euji187l65u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.huynhtrongman.masoi",
+            "certificate_hash": "e75d0f53d2e4e07c69ca140cbdd95a32820686f9"
+          }
+        },
+        {
+          "client_id": "1005370802483-lnqebi3sv6uctdcledhjgo6vckorufoc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ-RSdlw3XdRHUSco5v95isK2jFlQwLNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005370802483-lnqebi3sv6uctdcledhjgo6vckorufoc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

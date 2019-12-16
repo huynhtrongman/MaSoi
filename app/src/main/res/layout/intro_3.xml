@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg_screen3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:src="@drawable/baove"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bảo Vệ"
+            android:fontFamily="@font/abril_fatface"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:fontFamily="sans-serif-black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="Người Có Khả Năng Bảo Vệ 1 Ai Đó Khỏi Cái Chết, Không Bảo Vệ Liên Tiếp 1 Đối Tượng"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_desc"/>
+
+    </LinearLayout>
+</RelativeLayout>

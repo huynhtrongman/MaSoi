@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <RelativeLayout
+
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:paddingLeft="15dp"
+            android:background="@drawable/bg_stroke_light"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:hint="Số Điện Thoại"
+            android:padding="5dp"
+            android:id="@+id/user_sign_in"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <EditText
+            android:paddingLeft="15dp"
+            android:background="@drawable/bg_stroke_light"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:hint="Mật Khẩu"
+            android:id="@+id/pass_sign_in"
+            android:layout_below="@id/user_sign_in"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:password="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/hide_or_visible_sign_in"
+            android:src="@drawable/hide"
+            android:layout_below="@id/user_sign_in"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/but_sign_in"
+            android:text="Sign In"
+            android:textSize="26dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_but_login"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/pass_sign_in"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="60dp"/>
+    </RelativeLayout>
+</RelativeLayout>

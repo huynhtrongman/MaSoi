@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#170515"
+    android:layout_height="match_parent"
+    tools:context=".Fill_In_Profile">
+    <ImageView
+        android:src="@drawable/icon_back"
+        android:id="@+id/but_back_welcome"
+        android:layout_width="60dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:text="Chào Mừng Bạn Gia Nhập Làng OkeHu !" />
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcome"
+        android:src="@drawable/masoi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_title_name"
+           android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:text="Họ Và Tên Của Bạn Là :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:background="@drawable/bg_stroke_light"
+            android:hint="Your Name"
+            android:id="@+id/txt_name"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="#FFCCFF"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <com.airbnb.lottie.LottieAnimationView
+               app:lottie_fileName="xaocho.json"
+               app:lottie_loop="true"
+               app:lottie_autoPlay="true"
+               android:id="@+id/avatar"
+               android:layout_centerHorizontal="true"
+               android:layout_width="200dp"
+               android:layout_height="200dp"/>
+           <ImageView
+               android:id="@+id/img_avatar"
+               android:layout_centerHorizontal="true"
+               android:layout_width="200dp"
+               android:layout_height="200dp"/>
+           <TextView
+               android:layout_below="@id/avatar"
+               android:layout_centerHorizontal="true"
+               android:textStyle="bold"
+               android:textSize="22dp"
+               android:textColor="#ffffff"
+               android:text="Chọn Avatar"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"/>
+       </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_next"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:text="NEXT"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

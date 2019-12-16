@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#170515"
+    tools:context=".Login">
+    <View
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/view_animation"
+        android:background="@drawable/brush_animation"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <View
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/view_sms"
+        android:background="@drawable/brush_fb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/container_login"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <RelativeLayout
+        android:layout_below="@id/view_pager"
+        android:id="@+id/group_option_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/bg_google"
+            android:id="@+id/but_google"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@drawable/google_icon"
+                android:layout_width="60dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:paddingLeft="4dp"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:text="Tiếp Tục Với Google"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+
+            <com.facebook.login.widget.LoginButton
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/but_google"
+                android:id="@+id/but_facebook"
+                android:background="@drawable/bg_facebook"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:text="Đăng Nhập Với Facebook"
+                android:layout_width="320dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"/>
+
+
+        <LinearLayout
+            android:background="@drawable/bg_phone"
+            android:id="@+id/but_sms"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/but_facebook"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/sms_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Đăng Nhập Với SĐT"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_login"
+        android:layout_marginTop="100dp"
+            android:weightSum="2"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <TextView
+            android:background="@drawable/bg_stroke_dark"
+            android:id="@+id/txt_sign_in"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Đăng Nhập"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:fontFamily="@font/almendra" />
+        <TextView
+            android:background="@drawable/bg_stroke_dark"
+            android:id="@+id/txt_sign_up"
+            app:fontFamily="@font/almendra"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Đăng Ký"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>
